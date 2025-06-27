@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship - Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="internship.css"> <!-- New CSS file for flip effect -->
+    <script defer src="internship.js"></script> <!-- New JS file for mobile click flip -->
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Dhamotharan K</a>
+        <nav id="navbar">
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="certification.html">Certification</a>
+            <a href="education.html">Education</a>
+            <a href="internship.html" class="active">Internship</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <script>
+  // Toggle function for mobile nav menu
+  function toggleMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('active');
+  }
+
+  // Attach event listener once DOM is loaded
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuBtn = document.querySelector('.hamburger');
+    if (menuBtn) {
+      menuBtn.addEventListener('click', toggleMenu);
+    }
+  });
+</script>
+
+    </header>
+
+    <section class="experience">
+        <h2 class="section-title">Internship</h2>
+        <div class="experience-container">
+
+            <!-- Internship Box 1 -->
+            <div class="experience-box">
+                <div class="experience-inner">
+                    <div class="experience-front">
+                        <h3>Cyber Security & Ethical Hacking Intern</h3>
+                    </div>
+                    <div class="experience-back">
+                        <p>CubeAI Solutions</p>
+                        <p>Oct 2024 - Jan 2025</p>
+                        <p>Worked on ethical hacking, network security, and security audits.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Internship Box 3 -->
+            <div class="experience-box">
+                <div class="experience-inner">
+                    <div class="experience-front">
+                        <h3>Vulnerability Assessment & Penetration Testing Intern</h3>
+                    </div>
+                    <div class="experience-back">
+                        <p>Pargavan Cyyber Solution</p>
+                        <p>Jun 2024 - Jul 2024</p>
+                        <p>Conducted penetration testing and vulnerability scans using Kali Linux.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Internship Box 6 -->
+            <div class="experience-box">
+                <div class="experience-inner">
+                    <div class="experience-front">
+                        <h3>Cyber Security Analyst Intern</h3>
+                    </div>
+                    <div class="experience-back">
+                        <p>Thinkinfo Expert Solutions</p>
+                        <p>Aug 2023 - Sep 2023</p>
+                        <p>Conducted security analysis, SIEM log monitoring, and security event handling.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Dhamotharan K</a>
+        <nav id="navbar">
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="certification.html">Certification</a>
+            <a href="education.html" class="active">Education</a>
+            <a href="internship.html" >Internship</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <script>
+  // Toggle function for mobile nav menu
+  function toggleMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('active');
+  }
+
+  // Attach event listener once DOM is loaded
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuBtn = document.querySelector('.hamburger');
+    if (menuBtn) {
+      menuBtn.addEventListener('click', toggleMenu);
+    }
+  });
+</script>
+
+    </header>
+
+    <section class="education">
+        <h2 class="section-title">Education</h2>
+        <div class="education-container">
+            
+            <!-- Education Entry 1 -->
+            <div class="education-entry">
+                <div class="degree-box">B.E - Computer Science & Engineering (Cyber Security)</div>
+                <div class="institution-box">KSR Institute For Engineering And Technology<br>2022-Present</div><br>
+            </div>
+    
+            <!-- Education Entry 2 -->
+            <div class="education-entry">
+                <div class="degree-box">HSC <br> (12th)</div>
+                <div class="institution-box">Devasakayam Matric. Hr. Sec. School<br>2021-2022</div><br>
+            </div>
+    
+            <!-- Education Entry 3 -->
+            <div class="education-entry">
+                <div class="degree-box">SSLC <br> (10th)</div>
+                <div class="institution-box">Devasakayam Matric. Hr. Sec. School<br>2019-2020</div><br>
+            </div>
+    
+        </div>
+    </section>
+    
+
+</body>
+</html>

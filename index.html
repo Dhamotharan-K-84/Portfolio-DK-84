@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>DK-84</title>
+</head>
+<body>
+    <header>
+        <a href="contact.html" class="logo">DK-84</a>
+
+        <nav>
+            <a href="#" class="active"> Home</a>
+            <a href="skills.html" >Skills</a>
+            <a href="certification.html" >Certification</a>
+            <a href="education.html" >Education</a>
+            <a href="internship.html" >Internship</a>
+            <a href="contact.html" >Contact</a>
+        </nav>
+      </header>
+      <section class="home">
+        <div class="home-img">
+        </div>
+        <div class="home-content">
+          <h1>Hi, It's <span>Dhamotharan K</span></h1>
+          <h3 class="typing-text">I'm a <span></span></h3>
+          <p>I'm Cyber Security Student with a passion for protecting organizations from cyber attacks. Skilled in threat intelligence, incident response, and security awareness training. Proven ability to work independently and as part of a team to identify, analyze, and respond to security incidents.</p>
+            <div class="social-icons">
+                <a href="https://linkedin.com/in/dhamotharankumaran"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Dhamotharan-K-84"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="contact.html" class="btn">Hire me</a>
+            <a href="/Resume/Dhamotharan K.pdf" class="btn">Download Resume</a>
+        </div>
+        
+    </section>
+    <script>
+        const typedText = document.querySelector(".typing-text span");
+        const words = ["Cyber Security Practitioner", "Java Developer", "Pen. Tester", "Full Stack Developer"];
+        let wordIndex = 0, charIndex = 0;
+        let isDeleting = false;
+        let typingSpeed = 100; // Constant speed for typing and deleting
+      
+        function typeEffect() {
+          let currentWord = words[wordIndex];
+      
+          if (isDeleting) {
+            charIndex--;
+          } else {
+            charIndex++;
+          }
+      
+          typedText.textContent = currentWord.substring(0, charIndex);
+      
+          if (!isDeleting && charIndex === currentWord.length) {
+            setTimeout(() => { isDeleting = true; }, 1000); // Pause before deleting
+          } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            wordIndex = (wordIndex + 1) % words.length; // Move to the next word
+          }
+      
+          setTimeout(typeEffect, typingSpeed); // Constant speed for both typing & deleting
+        }
+      
+        document.addEventListener("DOMContentLoaded", typeEffect);
+      </script>
+          
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo">Dhamotharan K</a>
+        <nav id="navbar">
+            <a href="index.html">Home</a>
+            <a href="skills.html" class="active">Skills</a>
+            <a href="certification.html">Certification</a>
+            <a href="education.html">Education</a>
+            <a href="internship.html" >Internship</a>
+            <a href="mailto:dhamotharank845@gmail.com">Contact</a>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <script>
+  // Toggle function for mobile nav menu
+  function toggleMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('active');
+  }
+
+  // Attach event listener once DOM is loaded
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuBtn = document.querySelector('.hamburger');
+    if (menuBtn) {
+      menuBtn.addEventListener('click', toggleMenu);
+    }
+  });
+</script>
+
+    </header>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2 class="section-title">Cybersecurity Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill-box">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>Penetration Testing</h3>
+                <p>Experience with tools like Metasploit, Burp Suite, and Kali Linux for ethical hacking and security assessments.</p>
+            </div>
+
+            <div class="skill-box">
+                <i class="fa-solid fa-bug"></i>
+                <h3>Programming</h3>
+                <p>Proficiency in Java, Python, and C Programming Languages. Ready to learn any required Programming Languages</p>
+            </div>
+
+            <div class="skill-box">
+                <i class="fa-solid fa-network-wired"></i>
+                <h3>Network Security</h3>
+                <p>Understanding of firewalls, IDS/IPS, and protocols like TCP/IP, CSMA/CD, and CSMA/CA.</p>
+            </div>
+
+            <div class="skill-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Secure Coding</h3>
+                <p>Knowledge of input validation, output encoding, and secure coding practices to prevent vulnerabilities like SQL Injection.</p>
+            </div>
+
+            <div class="skill-box">
+                <i class="fa-solid fa-lock"></i>
+                <h3>Data Protection</h3>
+                <p>Understanding of encryption standards, access control, and GDPR compliance for securing sensitive data.</p>
+            </div>
+
+            <div class="skill-box">
+                <i class="fa-solid fa-eye"></i>
+                <h3>Threat Intelligence</h3>
+                <p>Experience in analyzing cybersecurity threats, incident response, and mitigating attacks proactively.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

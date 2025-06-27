@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Dhamotharan K</a>
+        <nav id="navbar">
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="certification.html">Certification</a>
+            <a href="education.html">Education</a>
+            <a href="internship.html" >Internship</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <script>
+  // Toggle function for mobile nav menu
+  function toggleMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('active');
+  }
+
+  // Attach event listener once DOM is loaded
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuBtn = document.querySelector('.hamburger');
+    if (menuBtn) {
+      menuBtn.addEventListener('click', toggleMenu);
+    }
+  });
+</script>
+
+    </header>
+
+    <section class="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <p>Got a project or job opportunity? Feel free to reach out!</p>
+
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <form action="mailto:dhamotharank845@gmail.com" method="POST" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button> <!-- Properly aligned button -->
+            </form>            
+
+            <!-- Contact Details -->
+            <div class="contact-details">
+                <h3>Contact Info</h3>
+                <p><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:dhamotharank845@gmail.com">dhamotharank845@gmail.com</a></p>
+                <p><i class="fa-solid fa-phone"></i> Phone: +91 6383119067</p>
+                <p><i class="fa-solid fa-location-dot"></i> Location: Tamil Nadu, India</p>
+
+                <div class="social-icons">
+                    <a href="https://linkedin.com/in/dhamotharankumaran" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Dhamotharan-K-84" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
